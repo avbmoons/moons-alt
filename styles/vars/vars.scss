@@ -1,0 +1,60 @@
+@use "sass:math";
+
+$width-site: 100%;
+$width-header: $width-site *0.70;   // *0.84;
+$width-footer: $width-site *0.70;   // *0.84;
+$width-section: $width-site *0.70;  // *0.84;
+$width-sticky: 2.5622vw;    // 35px;
+
+$height-site: 100vh;    // *2;
+$height-header: 10vh;
+$height-footer: 5vh;    //10vh;
+$height-sticky: 12.3698vh;  // 495px;
+$height-main-min: ($height-site) - ($height-header) - ($height-footer);
+
+$margin-section-top: $height-header;
+
+$color-bc-dark: #0a1414; // rgb(10,20,20)
+$color-bc-light: #FAFFFF; // rgb(250,255,255)  // #fcfaf7;
+$color-active: #6CD8D8; // rgb(108,216,216) // #daac8a;
+$color-accent: #5BB6B6; // rgb(91,182,182) // #85796f;
+$color-accent-middle: #4A9494; // rgb(74,148,148)
+$color-accent-dark: #397272; // rgb(57,114,114)
+$color-flare: #daac8a; // rgb(218,172,138)
+$color-test: #79bebe;
+$color-test-active: #6de9e9;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/font/Roboto.ttf);
+}
+
+@mixin flex-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+@mixin flex-horizontal {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+@mixin text-font($font-size, $font-weight, $line-height, $letter-spacing) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto;
+}

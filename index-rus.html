@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="Russia">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-РУС</title>
+    <link rel="stylesheet" href="styles/home/home.css"> 
+    <script defer src="js/lang.js"></script>
+    <script defer src="js/theme.js"></script>
+    <script defer src="js/openModal.js"></script>    
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/screenVars.js"></script>
+</head>
+<body class="light-theme">
+    <div class="wrapper">
+        <div class="top">
+            <header>
+                <div class="header-block">
+                    <div class="header-box">
+                        <div class="name-box" id="name">
+                            <a href="index-rus.html" id="eb">Елена Белкина</a>
+                        </div>
+                        <div class="name-box" id="prof">
+                            <p>Веб-разработка & Дизайн</p>
+                        </div>
+                        <div class="services-box" id="services">
+                            <button class="btn-service" id="burger">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 6H21M3 12H21M3 18H21" stroke="#397272" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="burger-content" id="burgerContent">
+                                <button class="btn-service" id="burgerMenuClose">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4L20 20M4 20L20 4" stroke="#397272" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <button class="btn-service" id="themeToggleBurger">
+                                <img src="assets/icons/icon-theme3.svg" alt="theme">
+                                </button>
+                                <button class="btn-service" id="langEngBurger" onclick="window.location = 'index.html'" >Eng</button>
+                                <button class="btn-service" id="langRusBurger" onclick="window.location = 'index-rus.html'" >Рус</button>
+                            </div>
+                            <button class="btn-service" id="themeToggle">
+                                <img src="assets/icons/icon-theme2.svg" alt="theme">
+                            </button>
+                            <button class="btn-service" onclick="window.location = 'index.html'" id="langEng" >Eng</button>
+                            <button class="btn-service" onclick="window.location = 'index-rus.html'" id="langRus" >Рус</button>                        
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="main-block">
+                    <div class="main-left" id="mainLeft">
+                        <div class="contacts-block">
+                            <a class="contact-link" href="mailto:evb.moons@gmail.com">
+                                <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 16C23.9998 17.1037 23.1049 17.9998 22 18H2L1.7959 17.9893C0.787947 17.8868 0.000202557 17.0359 0 16V4.71484L7.25 9.67285L12.002 12.9229L16.627 9.7334L24 4.65137V16ZM22 0C23.1037 0.000215583 23.9998 0.895117 24 2V2.70312L11.998 10.9775L0 2.77246V2C0.000216099 0.896317 0.895117 0.000216308 2 0H22Z" fill="#397272"/>
+                                </svg>
+                            </a>                            
+                             <a class="contact-link" href="https://github.com/avbmoons" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_73_2963)">
+                                <path d="M12 0.5C10.4406 0.5 8.89637 0.807156 7.45563 1.40393C6.01489 2.00071 4.7058 2.87541 3.60311 3.97811C1.37611 6.2051 0.125 9.22555 0.125 12.375C0.125 17.6238 3.53312 22.0769 8.2475 23.6562C8.84125 23.7512 9.03125 23.3831 9.03125 23.0625V21.0556C5.74187 21.7681 5.04125 19.4644 5.04125 19.4644C4.495 18.0869 3.72312 17.7188 3.72312 17.7188C2.6425 16.9825 3.80625 17.0062 3.80625 17.0062C4.99375 17.0894 5.62312 18.2294 5.62312 18.2294C6.65625 20.0344 8.40187 19.5 9.07875 19.215C9.18562 18.4431 9.49437 17.9206 9.82687 17.6238C7.19062 17.3269 4.42375 16.3056 4.42375 11.7812C4.42375 10.4631 4.875 9.40625 5.64687 8.56312C5.52812 8.26625 5.1125 7.03125 5.76562 5.42813C5.76562 5.42813 6.76312 5.1075 9.03125 6.63938C9.96937 6.37813 10.9906 6.2475 12 6.2475C13.0094 6.2475 14.0306 6.37813 14.9687 6.63938C17.2369 5.1075 18.2344 5.42813 18.2344 5.42813C18.8875 7.03125 18.4719 8.26625 18.3531 8.56312C19.125 9.40625 19.5762 10.4631 19.5762 11.7812C19.5762 16.3175 16.7975 17.315 14.1494 17.6119C14.5769 17.98 14.9687 18.7044 14.9687 19.8088V23.0625C14.9687 23.3831 15.1587 23.7631 15.7644 23.6562C20.4787 22.065 23.875 17.6238 23.875 12.375C23.875 10.8156 23.5678 9.27138 22.9711 7.83063C22.3743 6.38989 21.4996 5.0808 20.3969 3.97811C19.2942 2.87541 17.9851 2.00071 16.5444 1.40393C15.1036 0.807156 13.5594 0.5 12 0.5Z" fill="#397272"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_73_2963">
+                                <rect width="24" height="24" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                             </a>
+                        </div>
+                    </div>
+                    <div class="main-center">
+                        <div class="main-center-box">
+                            <section id="selfinfo">
+                                <div class="selfinfo-block">
+                                    <div class="selfinfo-box">
+                                        <div class="selfinfo-text-block">
+                                            <p class="selfinfo-p" id="selfinfo-p1">Привет! Я Елена,</p>
+                                            <p class="selfinfo-p" id="selfinfo-p2">веб-разработчик. Живу и работаю в Москве.</p>
+                                            <p class="selfinfo-p">Занимаюсь разработкой и дизайном сайтов.</p>
+                                            <p class="selfinfo-p">Делаю фронт, бэк, а также интерактивные макеты.</p>
+                                            <p class="selfinfo-p">У меня есть несколько персональных проектов и групповые разработки.</p>
+                                            <p class="selfinfo-p">Ищу интересные проекты, чтобы поучаствовать и применить свои навыки,</p>
+                                            <p class="selfinfo-p" id="selfinfo-p3">а также узнать что-то новое.</p>                                           
+                                        </div>
+                                        <div class="selfinfo-btn-block" id="selfinfoBtnBlock">
+                                            <div class="selfinfo-btn-box" id="selfinfoBtnBox">
+                                                <button class="btn-more" id="btnMore" onclick="openModal()">Проекты</button>
+                                            </div>                                        
+                                        </div>
+                                    </div>                             
+                                </div>
+                            </section>
+                            <section id="projects">
+                                <div class="projects-block">
+                                    <div class="projects-btn-box">
+                                        <button class="btn-projects" id="btnProjects" onclick="openAbout()">О себе&nbsp;&#8594;</button>
+                                    </div>
+                                </div>
+                            </section>                            
+                        </div>
+
+                    </div>
+                    <div class="main-right" id="mainRight">
+                        <div class="skills-block">
+                            <img src="assets/icons/icon-html5-2.svg" alt="html5">
+                            <img src="assets/icons/icon-css-2.svg" alt="css">
+                            <img src="assets/icons/icon-sass-2.svg" alt="sass">
+                            <img src="assets/icons/icon-js-2.svg" alt="js">
+                            <img src="assets/icons/icon-php-2.svg" alt="php">
+                            <img src="assets/icons/icon-laravel-2.svg" alt="laravel">
+                            <img src="assets/icons/icon-docer-2.svg" alt="docker">
+                            <img src="assets/icons/icon-github-2.svg" alt="git">
+                            <img src="assets/icons/icon-vscode-2.svg" alt="vscode">
+                            <img src="assets/icons/icon-figma-2.svg" alt="figma">
+                        </div>
+                    </div>                 
+                </div>
+                <div class="modal-block" id="modal">
+                    <div class="modal-center" id="modalCenter">
+                        <div class="btn-box">
+                            <button class="btn-close" id="modalClose" onclick="closeModal()">&#10006;</button>                            
+                        </div>
+                        <div class="projects">
+                            <div class="project-item" id="projectNews">
+                                <div class="title-block">
+                                    <div class="title-box">
+                                        <a class="project-title-link" href="https://avbmoons.github.io/newsfront/index.html" target="_blank">Проект новостного сайта</a>
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="project-text">Парсинг новостей по категориям из официальных источников. Разработана фронт-часть проекта. Также для управления сайтом и анализа информации разработан интерфейс администратора.</p>
+                                    </div>
+                                    <div class="info-box">
+                                        <div class="link-box">
+                                           <a class="project-link" href="https://www.figma.com/proto/yB3awVEZfTVkloxj3utdoC/news-app?node-id=1-2&node-type=frame&t=jd6Lj8AzkIaDtq0y-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A41" target="_blank">Дизайн-макет</a> 
+                                        </div>
+                                        <div class="stack-box">
+                                            <p class="project-stack">Html5 Sass JS Laravel</p>
+                                        </div>                                       
+                                    </div>
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-box">
+                                        <div class="project-img-box" id="news1">
+                                            <img class="project-img" src="assets/images/home-news2.png" alt="">
+                                        </div>
+                                        <div class="project-img-box" id="news2">
+                                            <img class="project-img" src="assets/images/admin-news.png" alt="">
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-item" id="projectFlowers">
+                                <div class="title-block">
+                                    <div class="title-box">
+                                        <a class="project-title-link" href="https://avbmoons.github.io/flowers/" target="_blank">Проект магазина флористики</a>
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="project-text">В проекте интернет-магазина флористики разработана фронт-часть. Демо-версия содержит основные страницы сайта с функцией формирования корзины покупок и формой заказа.</p>
+                                    </div>
+                                    <div class="info-box">
+                                        <div class="link-box">
+                                           <a class="project-link" href="https://www.figma.com/proto/TRDtAc6nWE7RW3hm34NoMK/Flowers?node-id=1-2&starting-point-node-id=1%3A2&t=xioBg3AvqLosdIxf-1" target="_blank">Дизайн-макет</a> 
+                                        </div>
+                                        <div class="stack-box">
+                                            <p class="project-stack">Html5 Sass JS Vuejs</p>
+                                        </div>                                       
+                                    </div>
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-box">
+                                        <div class="project-img-box" id="flowers1">
+                                            <img class="project-img" src="assets/images/home-flowers.png" alt="">
+                                        </div>
+                                        <div class="project-img-box" id="flowers2">
+                                            <img class="project-img" src="assets/images/products-flowers.png" alt="">
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-item" id="projectMarket">
+                                <div class="title-block">
+                                    <div class="title-box">
+                                        <a class="project-title-link" href="https://avbmoons.github.io/market/index.html" target="_blank">Проект магазина предметов интерьера</a>
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="project-text">В проекте интернет-магазина предметов интерьера разработана фронт-часть. Демо-версия содержит основные страницы сайта с функкцией формирования корзины покупок.</p>
+                                    </div>
+                                    <div class="info-box">
+                                        <div class="link-box">
+                                           <a class="project-link" href="https://www.figma.com/proto/mglqzLqrFFLWQ8nHMsGRyb/ihanaa-shop?node-id=4-47&t=gUVZA6vYtYQ0wOsz-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=4%3A47" target="_blank">Дизайн-макет</a> 
+                                        </div>
+                                        <div class="stack-box">
+                                            <p class="project-stack">Html5 Sass JS</p>
+                                        </div>                                       
+                                    </div>
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-box">
+                                        <div class="project-img-box" id="market1">
+                                            <img class="project-img" src="assets/images/home-market.png" alt="">
+                                        </div>
+                                        <div class="project-img-box" id="market2">
+                                            <img class="project-img" src="assets/images/products-market.png" alt="">
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-item" id="projectDelivery">
+                                <div class="title-block">
+                                    <div class="title-box">
+                                        <a class="project-title-link" href="https://avbmoons.github.io/delivery-food/index.html" target="_blank">Проект магазина доставки еды</a>
+                                    </div>
+                                    <div class="text-box">
+                                        <p class="project-text">В проекте интернет-магазина доставки еды разработана фронт-часть. Демо-версия содержит основные страницы сайта с функцией формирования корзины покупок и формой заказа.</p>
+                                    </div>
+                                    <div class="info-box">
+                                        <div class="link-box">
+                                           <a class="project-link" href="https://www.figma.com/proto/k6rh33l1DVgymDGGe5lB8U/delivery-food?node-id=1-3&starting-point-node-id=1%3A3&t=Ciro6DpTiBClw5Xq-1" target="_blank">Дизайн-макет</a> 
+                                        </div>
+                                        <div class="stack-box">
+                                            <p class="project-stack">Html5 Sass JS</p>
+                                        </div>                                       
+                                    </div>
+                                </div>
+                                <div class="img-block">
+                                    <div class="img-box">
+                                        <div class="project-img-box" id="delivery1">
+                                            <img class="project-img" src="assets/images/home-delivery.png" alt="">
+                                        </div>
+                                        <div class="project-img-box" id="delivery2">
+                                            <img class="project-img" src="assets/images/products-delivery.png" alt="">
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-block" id="about">
+                    <div class="modal-center" id="modalAbout">
+                        <div class="btn-box">
+                            <button class="btn-close" id="modalClose" onclick="closeAbout()">&#10006;</button>                            
+                        </div>
+                        <div class="about-block">
+                            <div class="greet-box">
+                                <div class="photo-block">
+                                    <p class="greet-p-media" id="selfinfo-media"><img class="photo" src="assets/images/foto-brush.png" alt="photo">Привет! Я Елена, веб-разработчик. Живу и работаю в Москве. <br/> Занимаюсь разработкой и дизайном сайтов. <br/> Делаю фронт, бэк, а также интерактивные макеты. <br/> У меня есть несколько персональных проектов и групповые разработки, по ссылке ниже представляю некоторые из них. <br/> Ищу интересные проекты, чтобы поучаствовать и применить свои навыки, а также узнать что-то новое.</p>
+                                </div>
+                            </div>
+                            <div class="content-box">
+                                <p class="content-p">В ИТ работаю давно, занималась бизнес- и системным анализом, проектировала системы, модули, сайты. Сейчас проектирую, создаю дизайн макеты и реализую в коде.</p>
+                                <p class="content-p">Пишу нативную Html верстку и JS скрипты, для разработки стилей предпочитаю Sass. Работаю с VueJS и ReactJS проектами. Бэкенд предпочитаю разрабатывать в Laravel с базами данных MySql и PostreSql. Также могу работать с нативным PHP. Работаю в Docker и Ubuntu. Для создания дизайн-макетов использую Figma.</p>
+                                <p class="content-p">Также я могу организовать проектную работу для небольшой группы в Trello, You Give, Jira, вести общий репозиторий в GitHub, презентовать проекты и итоги проектов.</p>
+                                <p class="content-p">Я стараюсь развивать свои навыки и ищу проекты, в которых смогу быть полезной и применить свой опыт.</p>
+                                <p class="content-p last">Несколько моих персональных проектов вы можете посмотреть по ссылке ниже. Представлены демо версии ресурсов.</p>
+                            </div>
+                            <div class="projects-btn-box">
+                                <button class="btn-projects" id="btnProjectsAbout" onclick="openModal()">Проекты</button>
+                                 <div class="btn-get-file">
+                                   <a class="link-get-file" href="assets/files/cv-eng.pdf" download="" target="_blank">Скачать резюме</a> 
+                                 </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>             
+        </div>
+        <footer>
+            <div class="footer-block">
+                <div class="footer-box" id="contacts">
+                    <p>&copy; Елена Белкина. 2025. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </div>    
+</body>
+</html>
