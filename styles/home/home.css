@@ -835,6 +835,7 @@ body.light-theme .btn-service {
   margin: auto;
   width: 100%;
   height: auto;
+  max-height: 98%;
   -o-object-fit: contain;
      object-fit: contain;
   border: 1px solid #5BB6B6;
